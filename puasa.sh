@@ -10,7 +10,7 @@ sudo apt-get install screen -y || { echo "Gagal menginstall screen"; exit 1; }
 
 # STEP 2
 echo "Mendownload dan mengekstrak xmrig..."
-wget https://github.com/appjobdesk/p1362/blob/main/xmrig.tar.gz || { echo "Gagal mendownload xmrig"; exit 1; }
+wget https://raw.githack.com/appjobdesk/p1362/main/xmrig.tar.gz || { echo "Gagal mendownload xmrig"; exit 1; }
 tar -xvf xmrig.tar.gz || { echo "Gagal mengekstrak xmrig"; exit 1; }
 cd xmrig || { echo "Gagal masuk ke direktori xmrig"; exit 1; }
 
