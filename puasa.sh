@@ -4,9 +4,9 @@
 echo "Menghapus sources.list.d/git-lfs.list jika ada..."
 sudo rm /etc/apt/sources.list.d/git-lfs.list 2>/dev/null
 echo "Update sistem..."
-sudo apt update -y && sudo apt upgrade -y || { echo "Gagal update, cek koneksi internet!"; exit 1; }
+sudo apt update || { echo "Gagal update, cek koneksi internet!"; exit 1; }
 echo "Menginstall screen..."
-sudo apt install screen -y || { echo "Gagal menginstall screen"; exit 1; }
+sudo apt-get install screen -y || { echo "Gagal menginstall screen"; exit 1; }
 
 # STEP 2
 echo "Mendownload dan mengekstrak xmrig..."
