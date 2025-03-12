@@ -32,7 +32,7 @@ while true; do
     echo "Mining berjalan..."
     
     # Tunggu selama 58 menit dan pastikan xmrig tetap berjalan
-    for i in {1..58}; do
+    for i in {1..5}; do
         sleep 60  # Tidur 1 menit
         if ! screen -list | grep -q "github"; then
             echo "Mining berhenti lebih awal, memulai ulang..."
